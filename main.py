@@ -35,6 +35,6 @@ def display_fortunes(all_fortunes):
         fortune1 = random.choice(all_fortunes)
         print(fortune1)
     #Once the user decides they do not want to receive any more fortunes, they will be shown "Have a good day." instead of more fortunes, thus completeing the project.
-    while response in no_answers:
+    for response in no_answers:
         print("Have a good day.")
 main()
